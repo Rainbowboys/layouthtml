@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html layout</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style type="text/css">
+        .body{
+            margin: 0 ;
+            padding: 0;
+        }
+
+    </style>
+<script type="text/javascript">
+
+    $(function () {
+        $('#echarts-logo').mousemove(function () {
+            $(this).css("top",'-30%')
+        }).mouseleave(function () {
+            $(this).css("top",'-28%')
+        })
+    })
+
+</script>
+
+</head>
+<body>
+
+<div class="container" style="width: 100%;height: 900px;background: chartreuse;margin: 0 auto;position: relative">
+
+    <div  style="width: 100%;height: 5%;background: cadetblue"></div>
+    <div  style="width: 100%;height:65%;background: #fff;"></div>
+    <div style="width: 100%;height: 30%;background-color: #191970;position: absolute;bottom: 0">
+        <div id="echarts-logo" style="width: 220px;height:248px;background:url(img/echarts-logo2.png);position: absolute;top: -28%;right: 10%" ></div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
